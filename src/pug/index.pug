@@ -5,3 +5,41 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Alpha
     body
+        .flex-container
+            div(style="width: 200px")
+            .dws
+                .dws__pulse
+                    .dws__text A
+            .settings
+                ul.settings__ul
+                    li.item
+                        | Colors:
+                        .colors-block
+                            .colors#block-color
+                                .settings__color-block#scb1
+                                .settings__color-block#scb2
+                                .settings__color-block#scb3
+                                .settings__color-block#scb4
+                                .settings__color-block#scb5
+                            .colors#text-color
+                                .settings__color-block#scb6
+                                .settings__color-block#scb7
+                                .settings__color-block#scb8
+                                .settings__color-block#scb9
+                                .settings__color-block#scb10
+                    li.item
+                        | Language:
+                        select#lang
+                            option(value="En") En
+                            option(value="Ru") Ru
+                    li.item
+                        | Password:
+                        .settings__password-block
+                            input.settings__input(type="password" placeholder="Enter password")
+                            input.settings__input(type="password" placeholder="Enter password")
+
+        .btn-container
+            button.btn-container__btn
+                <i class="fas fa-cog"></i>
+
+    script(src="https://kit.fontawesome.com/2d729672b9.js", crossorigin="anonymous")
